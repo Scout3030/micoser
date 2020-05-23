@@ -53,7 +53,7 @@
 												@endforeach
 											</ul>
 										</li>
-										<!--<li><a href="#">Trabaja con nosotros</a> </li>-->
+										<li><a href="{{route('jobs')}}">Trabaja con nosotros</a> </li>
 										<li><a href="{{route('contact')}}">Contáctanos</a>
 									</ul>
 								</nav>
@@ -285,9 +285,9 @@
 									@endforeach
 								</ul>
 							</li>
-							<!--<li @if(Request::url() == route('home')) class="active" @endif>
-								<a href="#" style="color: #fff">Trabaja con nosotros</a>
-							</li>-->
+							<li @if(Request::url() == route('jobs')) class="active" @endif>
+								<a href="{{route('jobs')}}" style="color: #fff">Trabaja con nosotros</a>
+							</li>
 							<li @if(Request::url() == route('contact')) class="active" @endif>
 								<a href="{{route('contact')}}" style="color: #fff">Contacto</a>
 							</li>

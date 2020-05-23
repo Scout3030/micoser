@@ -9,6 +9,17 @@ class DatabaseSeeder extends Seeder {
 	 * @return void
 	 */
 	public function run() {
+
+		factory(\App\Role::class, 1)->create(['name' => 'admin']);
+		factory(\App\Role::class, 1)->create(['name' => 'client']);
+
+		factory(\App\User::class, 1)->create([
+			'name' => 'admin',
+			'email' => 'admin@mail.com',
+			'password' => bcrypt('secret'),
+			'role_id' => \App\Role::ADMIN,
+		]);
+
 		factory(\App\Sector::class, 1)->create([
 			'name' => 'Minería',
 			'description' => 'Desde un proyecto minero en el desierto hasta el nivel más alto de una mina a tajo abierto o subterránea a 5,500 metros de altura en la sierra andina, MICOSER acompaña a la industria minera brindándole soluciones de Exploración, Operación y mantenimiento en sus diferentes proyectos, minas, plantas y sistemas de transporte de mineral. ',
