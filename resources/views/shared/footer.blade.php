@@ -61,7 +61,19 @@
 					</ul>
 				</div>
 			</div>
+
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="widget widget_text">
+					<h3 class="widget-title">Nuestros horarios</h3>
+					<ul class="feature-list">
+						<li> <span>Lun - vie</span> <span class="grey">8:00 - 20:00</span> </li>
+						<li> <span>Sábados</span> <span class="grey">9:00 - 16:00</span> </li>
+						<li> <span>Domingos</span> <span class="grey">Cerrado</span> </li>
+						<li> <span>Feriados</span> <span class="grey">10:00 - 14:00</span> </li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="padding-left: 0px; padding-right: 0px;">
 				<div class="widget widget_text">
 					<h3 class="widget-title">Contacto</h3>
 					<ul class="list-unstyled darklinks">
@@ -83,17 +95,6 @@
 								<div class="media-body"> <a href="mailto:administracion@micosersa.com">administracion@micosersa.com</a> </div>
 							</div>
 						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-				<div class="widget widget_text">
-					<h3 class="widget-title">Nuestros horarios</h3>
-					<ul class="feature-list">
-						<li> <span>Lun - vie</span> <span class="grey">8:00 - 20:00</span> </li>
-						<li> <span>Sábados</span> <span class="grey">9:00 - 16:00</span> </li>
-						<li> <span>Domingos</span> <span class="grey">Cerrado</span> </li>
-						<li> <span>Feriados</span> <span class="grey">10:00 - 14:00</span> </li>
 					</ul>
 				</div>
 			</div>

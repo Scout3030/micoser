@@ -178,21 +178,22 @@
             <div class="col-xs-12 col-md-12 text-center">
                 <h2 class="section_header text-uppercase"> Entremos en  <span class="black">contacto</span> </h2>
                 <div class="col-md-2"></div>
-                <form class="contact-form input-text-center row columns_padding_5 col-xs-12 col-md-8" method="post" action="./">
+                <form class="contact-form input-text-center row columns_padding_5 col-xs-12 col-md-8" method="post" action="{{route('admin.request')}}">
+                    @csrf
                     <div class="col-xs-12">
-                        <div class="form-group bottommargin_0"> <label for="name">Nombre</label> <input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control" placeholder="Nombre" autocomplete="off"> </div>
+                        <div class="form-group bottommargin_0"> <label for="name">Nombre</label> <input type="text" size="30" value="" name="name" id="name" class="form-control" placeholder="Nombre / Empresa" autocomplete="off" required value="{{old('name')}}"> </div>
                     </div>
                     <div class="col-xs-12">
-                        <div class="form-group bottommargin_0"> <label for="email">Correo</label> <input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control" placeholder="Correo electrónico" autocomplete="off"> </div>
+                        <div class="form-group bottommargin_0"> <label for="email">Correo</label> <input type="email" size="30" value="" name="email" id="email" class="form-control" placeholder="Correo electrónico" autocomplete="off" required value="{{old('email')}}"> </div>
                     </div>
                     <div class="col-xs-12">
-                        <div class="form-group bottommargin_0"> <label for="phone">Teléfono</label> <input type="tel" size="30" value="" name="phone" id="phone" class="form-control" placeholder="Teléfono" autocomplete="off"> </div>
+                        <div class="form-group bottommargin_0"> <label for="phone">Teléfono</label> <input type="tel" size="30" value="" name="phone" id="phone" class="form-control" placeholder="Teléfono" autocomplete="off" required value="{{old('phone')}}"> </div>
                     </div>
                     <div class="col-xs-12">
-                        <div class="form-group bottommargin_0"> <label for="message">Mensaje</label> <textarea aria-required="true" rows="5" cols="45" name="message" id="message" class="form-control" placeholder="Mensaje"></textarea> </div>
+                        <div class="form-group bottommargin_0"> <label for="message">Mensaje</label> <textarea rows="5" cols="45" name="message" id="message" class="form-control" placeholder="Mensaje" required value="{{old('message')}}"></textarea> </div>
                     </div>
                     <div class="col-xs-12 bottommargin_0">
-                        <div class="contact-form-submit"> <button type="submit" id="contact_form_submit" name="contact_submit" class="theme_button min_width_button margin_0">Enviar</button> </div>
+                        <div class="contact-form-submit"> <button type="submit" class="theme_button min_width_button margin_0">Enviar</button> </div>
                     </div>
                 </form>
             </div>

@@ -23,7 +23,7 @@
 						<h1 class="entry-title">{{$service->name}}</h1>
 						<div class="entry-content">
 							<p>{{$service->description}}</p>
-							<h3 class="text-uppercase">Brindamos asistencia en:</h3>
+							<h3 class="text-uppercase">{{$service->subtitle}}</h3>
 
 							<ul class="list2 grey">
 								@foreach(Str::of($service->characteristics)->explode('|') as $characteristic)

@@ -23,6 +23,8 @@ Route::get('/', function () {
 	return view('home', compact('sectors'));
 })->name('home');
 
+Route::post('/', 'AdminController@mail')->name('admin.request');
+
 Route::get('/nosotros', function () {
 	return view('about');
 })->name('about');

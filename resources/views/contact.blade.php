@@ -17,7 +17,8 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-6">
 				<h2 class="big-margin text-uppercase">Formulario de contacto</h2>
-				<form class="contact-form input-text-center row columns_padding_5" method="post" action="./">
+				<form class="contact-form input-text-center row columns_padding_5" method="post" action="{{route('admin.request')}}">
+                    @csrf
 					<div class="col-xs-12">
 						<div class="form-group bottommargin_0">
 							<label for="name">Nombre / Empresa</label>

@@ -24,7 +24,7 @@
 			<div class="col-xs-12 bottommargin_0">
 				<h2>NUESTRA VISIÓN</h2>
 				<ul class="list2 grey">
-					<li>Ser una empresa líder a nivel nacional en los sectores Minero –metalúrgico, Construcción, Petroquímica, infraestructura, energía y saneamiento, Con servicios de calidad total.
+					<li>Ser una empresa líder a nivel nacional en los sectores Minero – Metalúrgico,  Petroquímica, Energía, Contrucción y Agroindustria, con servicios de calidad total.
 					</li>
 				</ul>
 
